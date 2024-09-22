@@ -1,0 +1,45 @@
+
+body {
+    text-align: center;
+    background: linear-gradient(bisque, pink);
+    font-family: sans-serif;
+}
+h1, h2, h3 {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#edinburgh-img {
+    height: 400px;
+    width: 600px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.attractions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 5px 10px;
+}
+#information {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px 20px;
+    text-align: justify;
+    background-color: bisque;
+    margin: 25px auto 25px auto;
+    width: 850px;
+}
+#info {
+    width: 200px;
+    background-color: bisque;
+    padding: 10px;
+    margin: 20px auto 10px auto;
+    border-radius: 10px;
+    border: 2px solid white
+}
