@@ -8,6 +8,7 @@ h1, h2, h3 {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 #edinburgh-img {
+    height: 250px;
     width: 100%;
     border: 2px solid white;
     border-radius: 10px;
