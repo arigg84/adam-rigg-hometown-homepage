@@ -8,8 +8,7 @@ h1, h2, h3 {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 #edinburgh-img {
-    height: 400px;
-    width: 600px;
+    width: 100%;
     border: 2px solid white;
     border-radius: 10px;
 }
@@ -33,7 +32,7 @@ h1, h2, h3 {
     text-align: justify;
     background-color: bisque;
     margin: 25px auto 25px auto;
-    width: 850px;
+    width: 100%;
 }
 #info {
     width: 200px;
