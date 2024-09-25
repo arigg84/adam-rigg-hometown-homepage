@@ -27,13 +27,12 @@ h1, h2, h3 {
 }
 #information {
     border: 2px solid white;
-    padding: 5px;
+    padding: 1em;
     border-radius: 10px;
-    margin: 10px 20px;
     text-align: justify;
     background-color: bisque;
-    margin: 25px auto 25px auto;
-    width: 100%;
+    margin: 2em auto 2em auto;
+    width: 70%;
 }
 #info {
     width: 200px;
