@@ -9,31 +9,6 @@
 <body>
     <div>
         <h1>Welcome to Edinburgh</h1>
-        <script>
-            var images;
-
-
-images = ['https://media.istockphoto.com/id/655414358/photo/edinburgh-skyline-as-seen-from-calton-hill-scotland.jpg?s=1024x1024&w=is&k=20&c=hZlpwxWgejkrRhAFZY7JcBmWRLVCPhJaSVQF0ZXHtQk=', 'https://media.istockphoto.com/id/2149127090/photo/aerial-view-of-the-famous-colorful-victoria-street-in-the-old-town-of-edinburgh-scotland.jpg?s=612x612&w=0&k=20&c=87pNoCLzpsjuNwWplfKXzraQWLFJsUCoTJXSWLkPib4=', 'https://media.istockphoto.com/id/1493119096/photo/edinburgh-castle-scotland-at-sunset.jpg?s=1024x1024&w=is&k=20&c=JsYAr0F7epoCah-0CoF70dnEd_kZ8kG7iXM66U3zyPk='];
-let element_edinburgh = document.getElementById('edinburgh');
-element_edinburgh.setAttribute("src", 'https://media.istockphoto.com/id/655414358/photo/edinburgh-skyline-as-seen-from-calton-hill-scotland.jpg?s=1024x1024&w=is&k=20&c=hZlpwxWgejkrRhAFZY7JcBmWRLVCPhJaSVQF0ZXHtQk=');
-
-
-document.getElementById('next').addEventListener('click', (event) => {
-  let element_edinburgh2 = document.getElementById('edinburgh');
-  element_edinburgh2.replaceChildren();
-  images.unshift(images.pop());
-  element_edinburgh2.setAttribute("src", images.slice(-1)[0]);
-
-});
-
-document.getElementById('previous').addEventListener('click', (event) => {
-  let element_edinburgh3 = document.getElementById('edinburgh');
-  element_edinburgh3.replaceChildren();
-  images.push(images.shift());
-  element_edinburgh3.setAttribute("src", images[0]);
-
-});
-        </script>
         <img src="https://media.istockphoto.com/id/655414358/photo/edinburgh-skyline-as-seen-from-calton-hill-scotland.jpg?s=1024x1024&w=is&k=20&c=hZlpwxWgejkrRhAFZY7JcBmWRLVCPhJaSVQF0ZXHtQk=" id="edinburgh" alt="Edinburgh Skyline">
         <br><br><button type="button" id="next">Next</button><button type="button" id="previous">Previous</button>
     <div id="information">
@@ -90,5 +65,30 @@ document.getElementById('previous').addEventListener('click', (event) => {
         <img class="icon-img" src="Images/adam.jpg" alt="Adam and Kay">
         <p>I have lived in Edinburgh since I was a child.  I know all of the interesting places, and all of the fun things to do.</p>
     </div>
+    <script>
+        var images;
+
+
+images = ['https://media.istockphoto.com/id/655414358/photo/edinburgh-skyline-as-seen-from-calton-hill-scotland.jpg?s=1024x1024&w=is&k=20&c=hZlpwxWgejkrRhAFZY7JcBmWRLVCPhJaSVQF0ZXHtQk=', 'https://media.istockphoto.com/id/2149127090/photo/aerial-view-of-the-famous-colorful-victoria-street-in-the-old-town-of-edinburgh-scotland.jpg?s=612x612&w=0&k=20&c=87pNoCLzpsjuNwWplfKXzraQWLFJsUCoTJXSWLkPib4=', 'https://media.istockphoto.com/id/1493119096/photo/edinburgh-castle-scotland-at-sunset.jpg?s=1024x1024&w=is&k=20&c=JsYAr0F7epoCah-0CoF70dnEd_kZ8kG7iXM66U3zyPk='];
+let element_edinburgh = document.getElementById('edinburgh');
+element_edinburgh.setAttribute("src", 'https://media.istockphoto.com/id/655414358/photo/edinburgh-skyline-as-seen-from-calton-hill-scotland.jpg?s=1024x1024&w=is&k=20&c=hZlpwxWgejkrRhAFZY7JcBmWRLVCPhJaSVQF0ZXHtQk=');
+
+
+document.getElementById('next').addEventListener('click', (event) => {
+let element_edinburgh2 = document.getElementById('edinburgh');
+element_edinburgh2.replaceChildren();
+images.unshift(images.pop());
+element_edinburgh2.setAttribute("src", images.slice(-1)[0]);
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+let element_edinburgh3 = document.getElementById('edinburgh');
+element_edinburgh3.replaceChildren();
+images.push(images.shift());
+element_edinburgh3.setAttribute("src", images[0]);
+
+});
+    </script>
 </body>
 </html>
