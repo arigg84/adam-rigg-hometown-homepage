@@ -75,18 +75,18 @@ element_edinburgh.setAttribute("src", 'https://media.istockphoto.com/id/65541435
 
 
 document.getElementById('next').addEventListener('click', (event) => {
-let element_edinburgh2 = document.getElementById('edinburgh');
-element_edinburgh2.replaceChildren();
-images.unshift(images.pop());
-element_edinburgh2.setAttribute("src", images.slice(-1)[0]);
+  let element_edinburgh2 = document.getElementById('edinburgh');
+  element_edinburgh2.replaceChildren();
+  images.push(images.shift());
+  element_edinburgh2.setAttribute("src", images[0]);
 
 });
 
 document.getElementById('previous').addEventListener('click', (event) => {
-let element_edinburgh3 = document.getElementById('edinburgh');
-element_edinburgh3.replaceChildren();
-images.push(images.shift());
-element_edinburgh3.setAttribute("src", images[0]);
+  let element_edinburgh3 = document.getElementById('edinburgh');
+  element_edinburgh3.replaceChildren();
+  images.unshift(images.pop());
+  element_edinburgh3.setAttribute("src", images[0]);
 
 });
     </script>
